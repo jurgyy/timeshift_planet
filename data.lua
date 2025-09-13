@@ -21,5 +21,6 @@ require "prototypes.plant"
 --require "prototypes.nano_forge"
 require "prototypes.simulation_chamber"
 require "prototypes.crushing"
+require "prototypes.achievements"
 require "prototypes.compatibility"
 
