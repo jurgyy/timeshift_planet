@@ -1,3 +1,8 @@
+if data.raw["lab"]["supercomputer"] then
+  table.insert(data.raw["lab"]["supercomputer"].inputs, "datacell-dna-raw")
+  table.insert(data.raw["lab"]["supercomputer"].inputs, "datacell-dna-sequenced")
+end
+
 local icons = "__panglia_planet__/graphics/icons/"
 
 for i, inserter in pairs(data.raw["inserter"]) do

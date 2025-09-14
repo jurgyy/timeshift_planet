@@ -10,12 +10,12 @@
     "base",
     "space-age",
     "panglia_planet_assets >= 0.1.0",
-    "Moshine",
+    "Moshine >= 1.0.28",
     "thinking_brain >= 1.2.3",
     "matter_printer",
     "Cloning-vat-building >= 1.0.4",
     "snouz_better_asteroid_collector >= 1.0.2",
-    "snouz_long_electric_gun_turret >= 1.0.3",
+    "snouz_long_electric_gun_turret >= 1.0.5",
     "snouz_space_platform_hull >= 1.0.0"
   ],
   "space_travel_required": true

@@ -1,5 +1,8 @@
 
-
+if data.raw["lab"]["supercomputer"] then
+  table.insert(data.raw["lab"]["supercomputer"].inputs, "datacell-dna-raw")
+  table.insert(data.raw["lab"]["supercomputer"].inputs, "datacell-dna-sequenced")
+end
 
 if data.raw["agricultural-tower"]["processing-grid"] and data.raw["agricultural-tower"]["processing-grid"].accepted_seeds then
 	table.insert(data.raw["agricultural-tower"]["processing-grid"].accepted_seeds, "datacell-dna-raw")
@@ -156,10 +159,31 @@ data.raw["recipe"]["datacell-add-raw-data"].order = "a[moshine]-bc"
 data.raw["recipe"]["datacell-remove-raw-data"].subgroup = "moshine-datacells"
 data.raw["recipe"]["datacell-remove-raw-data"].order = "a[moshine]-bd"
 
+data.raw["tool"]["datacell-ai-model-data"].subgroup = "moshine-datacells"
+data.raw["tool"]["datacell-ai-model-data"].order = "a[moshine]-cc"
+data.raw["recipe"]["datacell-add-ai-model-data"].subgroup = "moshine-datacells"
+data.raw["recipe"]["datacell-add-ai-model-data"].order = "a[moshine]-cd"
+
 data.raw["tool"]["datacell-equation"].subgroup = "moshine-datacells"
-data.raw["tool"]["datacell-equation"].order = "a[moshine]-cc"
+data.raw["tool"]["datacell-equation"].order = "a[moshine]-dd"
 data.raw["recipe"]["datacell-add-equation"].subgroup = "moshine-datacells"
-data.raw["recipe"]["datacell-add-equation"].order = "a[moshine]-cd"
+data.raw["recipe"]["datacell-add-equation"].order = "a[moshine]-de"
 
 data.raw["tool"]["datacell-solved-equation"].subgroup = "moshine-datacells"
-data.raw["tool"]["datacell-solved-equation"].order = "a[moshine]-dd"
+data.raw["tool"]["datacell-solved-equation"].order = "a[moshine]-ee"
+
+if data.raw["technology"]["thinking-brain-technology"] then
+  data.raw["technology"]["thinking-brain-technology"].unit =
+  {
+    count = 400,
+    ingredients =
+    {
+      {"datacell-raw-data", 1},
+      {"datacell-ai-model-data", 1},
+      {"datacell-solved-equation", 1},
+      {"datacell-dna-raw", 1},
+      {"datacell-dna-sequenced", 1},
+    },
+    time = 900*500,
+  }
+end

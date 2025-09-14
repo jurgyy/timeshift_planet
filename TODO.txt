@@ -1,3 +1,3 @@
-add anti-recycler that takes any item and turn it into universe precursor
+do planetary data
 
-add hull wall mod
+add telescope on moshine orbit for planetary data, uses huge amount of solar energy.

@@ -104,6 +104,10 @@ data:extend({
     icon_size = 256,
     effects =
     {
+      {
+        type = "unlock-recipe",
+        recipe = "datacell-dna-raw"
+      },
     },
     prerequisites = {"panglia_planet_discovery_panglia"},
     research_trigger =
@@ -181,27 +185,20 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "datacell-dna-raw"
-      },
-      {
-        type = "unlock-recipe",
         recipe = "panglia_cloned_specimen_body_0_recipe"
       },
     },
     prerequisites = {"panglia_advanced_optics_nanotech", "cloning-vat-technology", "moshine-tech-processing-grid", "uranium-processing"},
     unit =
     {
-      count = 850,
+      count = 10,
       ingredients =
       {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"utility-science-pack", 1},
-        {"space-science-pack", 1},
-        {"agricultural-science-pack", 1}
+        {"datacell-ai-model-data", 1},
+        {"datacell-solved-equation", 1},
+        {"datacell-dna-raw", 1},
       },
-      time = 60
+      time = 145*500
     }
   },
 
@@ -224,17 +221,15 @@ data:extend({
     prerequisites = {"moshine-tech-ai-tier-10", "panglia_dna_manipulation", "matter_printer-technology"},
     unit =
     {
-      count = 900,
+      count = 40,
       ingredients =
       {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"utility-science-pack", 1},
-        {"space-science-pack", 1},
-        {"agricultural-science-pack", 1}
+        {"datacell-ai-model-data", 1},
+        {"datacell-solved-equation", 1},
+        {"datacell-dna-raw", 1},
+        {"datacell-dna-sequenced", 1},
       },
-      time = 60
+      time = 1658*500,
     }
   },
 
@@ -279,19 +274,17 @@ data:extend({
     prerequisites = {"thinking-brain-technology", "quantum-processor"},
     unit =
     {
-      count = 1200,
+      count = 200,
       ingredients =
       {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"utility-science-pack", 1},
-        {"space-science-pack", 1},
-        {"agricultural-science-pack", 1},
-        {"cryogenic-science-pack", 1}
+        {"datacell-raw-data", 1},
+        {"datacell-ai-model-data", 1},
+        {"datacell-solved-equation", 1},
+        {"datacell-dna-raw", 1},
+        {"datacell-dna-sequenced", 1},
       },
-      time = 60
-    },
+      time = 1008*500,
+    }
   },
 
 
@@ -317,15 +310,12 @@ data:extend({
       count_formula = "2^(L-3)*1000",
       ingredients =
       {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1},
-        {"space-science-pack", 1},
-        {"electromagnetic-science-pack", 1},
+        {"datacell-raw-data", 1},
+        {"datacell-ai-model-data", 1},
+        {"datacell-solved-equation", 1},
+        {"datacell-dna-sequenced", 1},
       },
-      time = 60
+      time = 6000
     },
     max_level = "infinite",
     upgrade = true
@@ -345,16 +335,15 @@ data:extend({
     prerequisites = {"panglia_sentient_processor", "worker-robots-storage-3"},
     unit =
     {
-      count = 450,
+      count = 800,
       ingredients =
       {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {"datacell-raw-data", 1},
+        {"datacell-ai-model-data", 1},
+        {"datacell-solved-equation", 1},
+        {"datacell-dna-sequenced", 1},
       },
-      time = 60
+      time = 10000
     },
     upgrade = true
   },
@@ -373,16 +362,15 @@ data:extend({
     prerequisites = {"panglia_worker-robots-storage-1"},
     unit =
     {
-      count = 450,
+      count = 1600,
       ingredients =
       {
-        {"automation-science-pack", 1},
-        {"logistic-science-pack", 1},
-        {"chemical-science-pack", 1},
-        {"production-science-pack", 1},
-        {"utility-science-pack", 1}
+        {"datacell-raw-data", 1},
+        {"datacell-ai-model-data", 1},
+        {"datacell-solved-equation", 1},
+        {"datacell-dna-sequenced", 1},
       },
-      time = 60
+      time = 10000
     },
     upgrade = true
   },
