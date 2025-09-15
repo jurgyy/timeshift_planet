@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.1
+Date: 2025-09-15
+  Changes:
+    - Moved precursor recipe to crusher tech
+    - crusher tech require branbalite tech
+    - solar_power_in_space: 600 -> 190
+  Compatibility:
+    - Fixed compatibility with planets adding a science pack to arbitrary techs, including incompatible with vanilla science packs
+---------------------------------------------------------------------------------------------------
 Version: 0.3.0
 Date: 2025-09-15
   Changes:

@@ -129,10 +129,14 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "panglia_crusher"
+        recipe = "panglia_crusher",
       },
+      {
+        type = "unlock-recipe",
+        recipe = "panglia_universe_precursor",
+      }
     },
-    prerequisites = {"matter_printer-technology"},
+    prerequisites = {"matter_printer-technology", "panglia_branbalite_slurry"},
     unit =
     {
       count = 1000,
@@ -383,8 +387,8 @@ data:extend({
 if data.raw["technology"]["matter_printer-technology"] then
   table.insert(data.raw["technology"]["matter_printer-technology"].prerequisites, "panglia_advanced_optics_nanotech")
   table.insert(data.raw["technology"]["matter_printer-technology"].prerequisites, "panglia_panglite_fiber")
-  table.insert(data.raw["technology"]["matter_printer-technology"].effects, {type = "unlock-recipe", recipe = "panglia_universe_precursor"})
 end
+  --table.insert(data.raw["technology"]["panglia_crusher"].effects, {type = "unlock-recipe", recipe = "panglia_universe_precursor"})
 
 if data.raw["technology"]["cloning-vat-technology"] then
  table.insert(data.raw["technology"]["cloning-vat-technology"].prerequisites, "panglia_branbalite_slurry")

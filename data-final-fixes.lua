@@ -197,3 +197,35 @@ for _, cat in pairs(pangliacrushing.category_list) do
     end
   end
 end
+
+
+local function add_tech_unit(tech, count, time, ingredients)
+  if data.raw["technology"][tech] and count and time and ingredients then
+    data.raw["technology"][tech].unit =
+    {
+      count = count,
+      ingredients = ingredients,
+      time = time,
+    }
+  end
+end
+
+
+add_tech_unit("panglia_dna_manipulation", 10, 145*500,     {{"datacell-ai-model-data", 1},{"datacell-solved-equation", 1},{"datacell-dna-raw", 1},} )
+add_tech_unit("panglia_simulation_chamber", 40, 1658*500,  {{"datacell-ai-model-data", 1},{"datacell-solved-equation", 1},{"datacell-dna-raw", 1},{"datacell-dna-sequenced", 1},} )
+add_tech_unit("panglia_sentient_processor", 200, 1008*500, {{"datacell-raw-data", 1},{"datacell-ai-model-data", 1},{"datacell-solved-equation", 1},{"datacell-dna-raw", 1},{"datacell-dna-sequenced", 1},} )
+add_tech_unit("panglia_worker-robots-storage-1", 800, 10000, {{"datacell-raw-data", 1},{"datacell-ai-model-data", 1},{"datacell-solved-equation", 1},{"datacell-dna-sequenced", 1},} )
+add_tech_unit("panglia_worker-robots-storage-2", 1600, 10000, {{"datacell-raw-data", 1},{"datacell-ai-model-data", 1},{"datacell-solved-equation", 1},{"datacell-dna-sequenced", 1},} )
+
+data.raw["technology"]["panglia_worker-robots-speed"].unit =
+{
+  count_formula = "2^(L-3)*1000",
+  ingredients =
+  {
+    {"datacell-raw-data", 1},
+    {"datacell-ai-model-data", 1},
+    {"datacell-solved-equation", 1},
+    {"datacell-dna-sequenced", 1},
+  },
+  time = 6000
+}

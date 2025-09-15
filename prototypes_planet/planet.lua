@@ -224,7 +224,7 @@ data:extend({
     subgroup = "planets",
     map_gen_settings = planet_map_gen.panglia(),
     pollutant_type = nil,
-    solar_power_in_space = 600,
+    solar_power_in_space = 190,
     platform_procession_set =
     {
       arrival = {"planet-to-platform-b"},
