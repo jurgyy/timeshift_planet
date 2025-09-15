@@ -38,6 +38,12 @@ if data.raw.recipe["matter_printer"] then
     {type = "item", name = "panglia_panglite_fiber", amount = 5},
   }
 end
+if data.raw.recipe["universe_precursor"] then
+  data.raw.recipe["universe_precursor"].surface_conditions = {
+    {property = "panglia_timeshift", min = 0, max = 0},
+    {property = "gravity", min = 0.01}
+  }
+end
 
 if data.raw.recipe["thinking-brain"] then
 	data.raw.recipe["thinking-brain"].ingredients =

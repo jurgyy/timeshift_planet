@@ -112,7 +112,7 @@ data:extend({
     {
       {inventory_index = defines.inventory.furnace_modules, shift = {0, 0.8}}
     },
-    allowed_effects = {"consumption", "speed", "productivity", "pollution", "quality"},
+    allowed_effects = {"consumption", "speed", "productivity", "pollution"},
     effect_receiver = {uses_module_effects = false, uses_beacon_effects = true, uses_surface_effects = true},
     resistances =
     {

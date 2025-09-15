@@ -193,6 +193,13 @@ data:extend({
     hidden_in_factoriopedia = true,
     hidden = true,
   },
+  {
+    type = "surface-property",
+    name = "panglia_timeshift",
+    default_value = 0,
+    hidden_in_factoriopedia = true,
+    hidden = true,
+  },
 
 
   {
@@ -235,7 +242,8 @@ data:extend({
       ["magnetic-field"] = 56,
       ["solar-power"] = 80,
       pressure = 1401, --must be 1000 >< 2000 for agricultural tower
-      gravity = 14
+      gravity = 14,
+      panglia_timeshift = 1,
     },
     asteroid_spawn_influence = 1,
     asteroid_spawn_definitions = asteroid_util.spawn_definitions(asteroid_util.nauvis_gleba, 0.9),

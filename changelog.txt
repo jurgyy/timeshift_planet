@@ -1,14 +1,18 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.0
-Date: 2025-09
+Date: 2025-09-15
   Changes:
     - Added snouz_space_platform_hull submod
     - Added 6 achievements
     - datacell [raw dna] is unlocked by an earlier tech
     - Techs for dna manipulation, simulation chamber, synaptic assembler, sentient processors and robot ugrades are using Moshine's tech system (with datacells)
+  Balance:
+    - Panglite multiplication: remove quality, allow productivity
+    - Hypercrusher can't have quality
+    - disallowed base recipe for universe precursors on panglia and in space
   UI:
     - Changed dust icon and UI placement
-    - Changed crusher icon
+    - Changed Hypercrusher icon
     - Made datacells subgroup, changed datacells to stats of moshine's (40 stacks, 5kg)
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.1

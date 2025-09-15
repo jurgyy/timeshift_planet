@@ -95,9 +95,10 @@ data:extend({
     results = {
       {type = "item", name = "panglia_panglite", amount = 6}
     },
-    allow_productivity = false,
+    allow_productivity = true,
     show_amount_in_title = false,
     surface_conditions = panglia_only,
+    allow_quality = false,
   },
 
   {
