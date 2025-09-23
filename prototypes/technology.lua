@@ -59,10 +59,10 @@ data:extend({
     icon_size = 256,
     effects =
     {
-      {
-        type = "unlock-recipe",
-        recipe = "panglia_branbalite_slurry_to_crudeoil"
-      },
+      --{
+      --  type = "unlock-recipe",
+      --  recipe = "panglia_branbalite_slurry_to_crudeoil"
+      --},
     },
     prerequisites = {"panglia_branbalite_slurry"},
     research_trigger =
@@ -74,6 +74,25 @@ data:extend({
   },
 
 
+  {
+    type = "technology",
+    name = "panglia_igneous_rock_to_lava",
+    icon = techicons .. "panglia_igneous_rock_to_lava.png",
+    icon_size = 256,
+    effects =
+    {
+      {
+        type = "unlock-recipe",
+        recipe = "panglia_igneous_rock_to_lava"
+      },
+    },
+    prerequisites = {"panglia_planet_discovery_panglia", "foundry"},
+    research_trigger =
+    {
+      type = "mine-entity",
+      entity = "panglia-big-rock"
+    },
+  },
 
 
 
@@ -131,10 +150,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "panglia_crusher",
       },
-      {
-        type = "unlock-recipe",
-        recipe = "panglia_universe_precursor",
-      }
+      --{
+      --  type = "unlock-recipe",
+      --  recipe = "panglia_universe_precursor",
+      --}
     },
     prerequisites = {"matter_printer-technology", "panglia_branbalite_slurry"},
     unit =

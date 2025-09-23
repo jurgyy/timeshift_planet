@@ -153,10 +153,10 @@ function pangliacrushing.incinerateRecipe(item, category, weight)
       icons = newicons,
       category = "panglia_crushing",
       enabled = true,
-      --hidden_in_factoriopedia = true,
       hide_from_player_crafting = true,
       hide_from_signal_gui = true,
-      --hidden = true,
+      hidden = true,
+      hidden_in_factoriopedia = true,
       -- this is now done through incinerator crafting speed
       -- energy_required = 1.0 / settings.startup["flare-stack-item-rate"].value,
       energy_required = number_from_weight,
@@ -229,3 +229,4 @@ data.raw["technology"]["panglia_worker-robots-speed"].unit =
   },
   time = 6000
 }
+

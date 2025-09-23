@@ -66,27 +66,6 @@ data:extend({
 
 
 
-  {
-    type = "item",
-    name = "panglia_dust",
-    icon = icons .. "panglia_dust.png",
-    icon_size = 64,
-    pictures =
-    {
-      {size = 64, filename = icons .. "panglia_dust.png", scale = 0.5},
-      {size = 64, filename = icons .. "panglia_dust_2.png", scale = 0.5},
-      {size = 64, filename = icons .. "panglia_dust_3.png", scale = 0.5},
-    },
-    subgroup = "panglia-processes",
-    order = "b[otherres]-ccc",
-    inventory_move_sound = item_sounds.resource_inventory_move,
-    pick_sound = item_sounds.resource_inventory_pickup,
-    drop_sound = item_sounds.resource_inventory_move,
-    stack_size = 100,
-    weight = 1 * kg,
-  },
-
-
 
 
 

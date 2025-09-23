@@ -26,11 +26,13 @@ This is very early access, the experience is probably not balanced yet.
 - The cosmic incubator and simulation chamber contains parts from [Krastorio 1 and 2](https://mods.factorio.com/mod/Krastorio2Assets) (GNU LGPLv3)
 - The simulation chamber and hypercrusher contains graphics from [Yuoki Industries](https://mods.factorio.com/mod/Yuoki) (CC BY-NC-SA) and other YuokiTani images shared on the forum
 - The simulation chamber contains graphics from [Exotic Space Industries](https://mods.factorio.com/mod/exotic-space-industries) by PreLeyZero (GNU LGPLv3)
-- The hypercrusher uses some graphics from Hurricane046's buildings (CC BY license)
+- The hypercrusher uses some graphics from Hurricane046's buildings (CC-BY)
 - 6 icons take elements from [Periodic Madness](https://mods.factorio.com/mod/periodic-madness) by Mr.SmoothieHuman
 - 4 icon (panglite fiber, brains, panglia crusher) use icons by [Malcolm Riley](https://github.com/malcolmriley/unused-renders)
+- Igneous rock uses a model from GunZ3D (Sketchfab, CC BY)
 - Datacell icon uses parts of petrak@ icon
 - Panglite entities (the circular rocks) are derived from 2 backgrounds from Final Fantasy IX (Moguri Mod) (Final Fantasy IX is a property of Square Enix, assets used under the premise of [fair use](https://en.wikipedia.org/wiki/Fair_use)). Another background is used for bits of the Branbalite plant. And another background is used in Panderoots and its overgrowths (turrets)
+- Some rock textures use models by valterjherson1 (sketchfab, CC BY)
 - Sound ambiance by klankbeeld (CC BY)
 - Energy roots sound is "Black Smoke" by Silicon_Transmitter (CC BY-NC-SA)
 - Some code bit are from Gotlag's Flare Stack (MIT)
