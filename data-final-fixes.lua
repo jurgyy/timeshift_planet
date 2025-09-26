@@ -230,3 +230,33 @@ data.raw["technology"]["panglia_worker-robots-speed"].unit =
   time = 6000
 }
 
+
+--make panglite impossible to make higher quality
+if data.raw["recipe"]["matter_printer-recycling"] and data.raw["recipe"]["matter_printer-recycling"].results then
+  data.raw["recipe"]["matter_printer-recycling"].results = {
+    {
+      amount = 0.25,
+      extra_count_fraction = 0.25,
+      name = "supercomputer",
+      type = "item"
+    },
+    {
+      amount = 0.25,
+      extra_count_fraction = 0.25,
+      name = "electromagnetic-plant",
+      type = "item"
+    },
+    {
+      amount = 2.5,
+      extra_count_fraction = 0.5,
+      name = "electronic-circuit",
+      type = "item"
+    },
+    {
+      amount = 12.5,
+      extra_count_fraction = 0.5,
+      name = "glass",
+      type = "item"
+    }
+  }
+end

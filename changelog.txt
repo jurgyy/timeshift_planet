@@ -1,6 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.1
+Date: 2025-09-26
+  Balance:
+    - Removed panglite from universe incubator recycling recipe, so you can't make quality panglite
+---------------------------------------------------------------------------------------------------
 Version: 0.4.0
-Date: 2025-09
+Date: 2025-09-26
   Changes:
     - Added 2 types of rocks with resources
     - Added Igneous rock (solidified lava) that you can turn ito lava
