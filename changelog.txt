@@ -17,18 +17,21 @@ Date: 2025-09
     - Planet now needs foundries (unlocks after vulcanus)
     - Panglite fiber is now electronics type instead of uranium process
     - Tech tree re-organized
+    - Panglite fiber recipe moved to electromagnetic plant and centrifuge
   Graphics:
-    - Panglite fiber icon reworked
+    - Panglite fiber icon reworked, new universe precursor, other icons switched
     - Optimized a lot of images in assets mod
     - Reduced universe precursor anim speed and max anim speed
     - Fixed universe precursor icon positioning
-    - New universe precursor icon
+    - Hypercrusher tech icon change
   Compatibility:
     - Fixed Branbalite not being buildable when Metal & Stars is there
   UI:
     - Combined some icons in factoriopedia
     - Hidden the recipe category "crushing"
     - Changed branbalite's factoriopedia preview
+    - Added mixed dust recipe advertising the hypercrusher
+    - Reorganized some icons
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.1
 Date: 2025-09-15

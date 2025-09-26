@@ -152,7 +152,7 @@ data:extend({
     research_trigger =
     {
       type = "mine-entity",
-      entity = "panglia-big-rock"
+      entity = "panglia-huge-igneous-rock"
     },
   },
 
@@ -171,8 +171,9 @@ data:extend({
     prerequisites = {"panglia_igneous_rock_to_lava", "matter_printer-technology"},
     research_trigger =
     {
-      type = "mine-entity",
-      entity = "panglia-big-rock"
+      type = "craft-fluid",
+      fluid = "lava",
+      amount = 100
     },
   },
 
@@ -212,10 +213,10 @@ data:extend({
         type = "unlock-recipe",
         recipe = "panglia_crusher",
       },
-      --{
-      --  type = "unlock-recipe",
-      --  recipe = "panglia_universe_precursor",
-      --}
+      {
+        type = "unlock-recipe",
+        recipe = "panglia_dust_dummy_recipe",
+      }
     },
     prerequisites = {"matter_printer-technology", "panglia_branbalite_slurry"},
     unit =
@@ -313,12 +314,12 @@ data:extend({
         recipe = "panglia_universe_precursor"
       },
     },
-    prerequisites = {"panglia_panglite_fiber", "matter_printer-technology", "panglia_universe_precursor_volcanic"},
+    prerequisites = {"panglia_panglite_fiber", "panglia_universe_precursor_volcanic", "panglia_crusher"},
     research_trigger =
     {
       type = "craft-item",
       item = "panglia_panglite_fiber",
-      amount = 100,
+      amount = 200,
     },
   },
 

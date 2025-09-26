@@ -553,6 +553,8 @@ data:extend({
 
 
 local function make_energy_roots_tesla_turret(num, seq)
+  local hidden = true
+  if num == 1 then hidden = false end
   data:extend({
     {
       type = "electric-turret",
@@ -560,6 +562,8 @@ local function make_energy_roots_tesla_turret(num, seq)
       icon = icons .. "panglia_energy_roots_tesla_turret.png",
       localised_name = {"entity-name.panglia_energy_roots_tesla_turret"},
       flags = {"placeable-player", "placeable-enemy"},
+      subgroup = "enemies",
+      order = "t-[panglia]-a" .. num,
       max_health = 750,
       collision_box = {{-0.2, -0.2 }, {0.2, 0.2}},
       selection_box = {{-0.5, -0.5 }, {0.5, 0.5}},
@@ -583,6 +587,8 @@ local function make_energy_roots_tesla_turret(num, seq)
       folded_animation = emptyturretanim,
       glow_light_intensity = 0.5,
       random_animation_offset = true,
+      hidden = hidden,
+      hidden_in_factoriopedia = hidden,
       integration = 
       {
         filename = entity .. "panglia_energy_roots/cell_roots.png", --_" .. num .. ".png",

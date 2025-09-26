@@ -49,9 +49,6 @@ data:extend({
 
 
 
-------------------------------------------------------
-------------- PANGLITE (circular rocks) --------------
-------------------------------------------------------
 
 
 data:extend({
@@ -104,6 +101,9 @@ data:extend({
     allow_quality = false,
   },
 
+------------------------------------------------------
+------------- PANGLITE (circular rocks) --------------
+------------------------------------------------------
 
   {
     type = "item",
@@ -133,9 +133,9 @@ data:extend({
   {
     type = "recipe",
     name = "panglia_panglite_multiplication",
-    icon = icons .. "panglia_panglite_multiplication.png",
-    subgroup = "panglia-processes",
-    order = "a[base]-dd",
+    --icon = icons .. "panglia_panglite_multiplication.png",
+    --subgroup = "panglia-processes",
+    --order = "a[base]-cc",
     category = "smelting",
     enabled = false,
     auto_recycle = false,
@@ -177,7 +177,8 @@ data:extend({
     subgroup = "panglia-processes",
     order = "a[base]-ff",
     --category = "centrifuging",
-    category = "electronics",
+    category = "electromagnetics",
+    additional_categories = {"centrifuging"},
     enabled = false,
     auto_recycle = false,
     energy_required = 5 * beacon_multiplier,
@@ -300,6 +301,10 @@ data:extend({
     allow_decomposition = false,
     surface_conditions = panglia_only,
   },
+
+
+
+  ------DUST
   {
     type = "item",
     name = "panglia_dust",
@@ -318,6 +323,48 @@ data:extend({
     drop_sound = item_sounds.resource_inventory_move,
     stack_size = 100,
     weight = 1 * kg,
+  },
+
+
+  {
+    type = "item",
+    name = "panglia_dummy_anything_sign",
+    icon = icons .. "panglia_dummy_anything_sign.png",
+    subgroup = "panglia-processes",
+    order = "b[otherres]-bd",
+    stack_size = 1,
+    hide_from_player_crafting = true,
+    hide_from_signal_gui = true,
+    hidden = true,
+    hidden_in_factoriopedia = true,
+    default_import_location = "panglia",
+    weight = 1*kg,
+  },
+
+  {
+    type = "recipe",
+    name = "panglia_dust_dummy_recipe",
+    --icon = icons .. "panglia_dust.png",
+    category = "panglia_crushing",
+    subgroup = "panglia-processes",
+    order = "a[base]-ff",
+    enabled = false,
+    --hide_from_player_crafting = true,
+    --hide_from_signal_gui = true,
+    --hidden = true,
+    --hidden_in_factoriopedia = true,
+    -- this is now done through incinerator crafting speed
+    -- energy_required = 1.0 / settings.startup["flare-stack-item-rate"].value,
+    energy_required = 1,
+    always_show_made_in = true,
+    ingredients = {
+      { type = "item", name = "panglia_dummy_anything_sign", amount = 1 },
+    },
+    results = {
+      { type = "item", name = "panglia_dust", amount = 1 }
+    },
+    --icon_size = 64,
+    --order = "zz[panglia_crushing]",
   },
 
 })
@@ -598,6 +645,8 @@ data:extend({
     hide_from_player_crafting = true,
     hidden_in_factoriopedia = false,
   },
+
+
 })
 
 
@@ -627,7 +676,7 @@ data:extend({
   {
     type = "recipe",
     name = "datacell-dna-raw",
-    icon = icons .. "datacell-dna-raw-recipe.png",
+    icon = icons .. "datacell-dna-raw.png",
     subgroup = "moshine-datacells",
     order = "b[panglia]-bb",
     category = "cloning",

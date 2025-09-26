@@ -37,6 +37,7 @@ if data.raw.recipe["matter_printer"] then
     --{type = "item", name = "productivity-module", amount = 10},
     --{type = "item", name = "uranium-235", amount = 5},
     {type = "item", name = "panglia_panglite", amount = 10},
+    {type = "item", name = "glass", amount = 50},
   }
 end
 if data.raw.recipe["universe_precursor"] then
