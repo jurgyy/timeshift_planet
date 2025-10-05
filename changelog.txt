@@ -8,6 +8,7 @@ Date: 2025-09
     - Modified planet intro music
     - Panglite rocks now use specific panglite sounds
   Balance:
+    - Halved the speed of speed zones (to 50x for now) (every recipe meant to be used with them have their time scaled too)
     - Tech "advanced optics and nanotech" requires datacell research, and triggers on panglite craft instead of glass (so it doesn't trigger when still locked)
     - Panglite rocks drop half the panglite amount
     - Removed panderoot overgrowth from tesla damage bonus tech

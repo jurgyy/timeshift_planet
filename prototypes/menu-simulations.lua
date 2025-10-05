@@ -63,6 +63,7 @@ menu_sims.panglia_panderoots_sim = {
   checkboard = false,
   planet = "panglia",
   game_view_settings = {default_show_value = false, show_shortcut_bar = false, show_quickbar = false, show_tool_bar = false},
+  init_update_count = 90,
   save = panglia_simulations .. "panglia_panderoots_sim.zip",
   length = 16 * second,
   init = [[
@@ -79,6 +80,7 @@ menu_sims.panglia_branbalite_sim = {
   checkboard = false,
   planet = "panglia",
   game_view_settings = {default_show_value = false, show_shortcut_bar = false, show_quickbar = false, show_tool_bar = false},
+  init_update_count = 90,
   save = panglia_simulations .. "panglia_branbalite_sim.zip",
   length = 12 * second,
   init = [[
@@ -95,6 +97,7 @@ menu_sims.panglia_universe_sim = {
   checkboard = false,
   planet = "panglia",
   game_view_settings = {default_show_value = false, show_shortcut_bar = false, show_quickbar = false, show_tool_bar = false},
+  init_update_count = 90,
   save = panglia_simulations .. "panglia_universe_sim.zip",
   length = 20 * second,
   init = [[
@@ -111,6 +114,7 @@ menu_sims.panglia_simchambers_sim = {
   checkboard = false,
   planet = "panglia",
   game_view_settings = {default_show_value = false, show_shortcut_bar = false, show_quickbar = false, show_tool_bar = false},
+  init_update_count = 90,
   save = panglia_simulations .. "panglia_simchambers_sim.zip",
   length = 15 * second,
   init = [[

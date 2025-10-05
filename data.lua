@@ -4,7 +4,7 @@ techicons = "__panglia_planet__/graphics/technology/"
 sounds = "__panglia_planet_assets__/sounds/"
 tssounds = "__panglia_planet_assets__/sounds/"
 
-beacon_multiplier = 100
+beacon_multiplier = 50
 panglia_only = {{property = "pressure", min = 1401, max = 1401}}
 
 require "prototypes_planet.hidden_beacon"
