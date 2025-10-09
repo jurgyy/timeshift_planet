@@ -255,7 +255,7 @@ data:extend({
     drop_sound = space_age_item_sounds.agriculture_inventory_move,
     stack_size = 10,
     default_import_location = "panglia",
-    random_tint_color = item_tints.iron_rust,
+    --random_tint_color = item_tints.iron_rust,
     fuel_value = "1MJ",
     fuel_category = "panglia_branbalite",
     plant_result = "panglia_branbalite_plant",

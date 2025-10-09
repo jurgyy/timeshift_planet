@@ -517,7 +517,7 @@ data:extend({
               target_effects = {
                 {
                   type = "play-sound",
-                  sound = sound_variations("__Moshine__/sound/entity/agricultural-tower/cervo", 13, 0.9),
+                  sound = sound_variations("__panglia_planet_assets__/sounds/entity/agricultural-tower/cervo", 13, 0.9),
                   damage_type_filters = "fire"
                 }
               }
@@ -526,8 +526,8 @@ data:extend({
         }
       }
     },
-    mining_sound = sound_variations("__Moshine__/sound/entity/agricultural-tower/cervo", 13, 0.9), --sound_variations("__space-age__/sound/mining/axe-mining-yumako-tree", 5, 0.6),
-    mined_sound = sound_variations("__Moshine__/sound/entity/agricultural-tower/cervo", 13, 0.9), --sound_variations("__space-age__/sound/mining/mined-yumako-tree", 6, 0.3),
+    mining_sound = sound_variations("__panglia_planet_assets__/sounds/entity/agricultural-tower/cervo", 13, 0.9), --sound_variations("__space-age__/sound/mining/axe-mining-yumako-tree", 5, 0.6),
+    mined_sound = sound_variations("__panglia_planet_assets__/sounds/entity/agricultural-tower/cervo", 13, 0.9), --sound_variations("__space-age__/sound/mining/mined-yumako-tree", 6, 0.3),
     growth_ticks = 10 * minutes,
     max_health = 50,
     collision_box = {{-0.3, -0.3}, {0.3, 0.3}},
@@ -553,7 +553,7 @@ data:extend({
           sheets = {
             {
               variation_count = 1,
-              filenames = {"__Moshine__/graphics/entity/quantum-computer/plant.png"},
+              filenames = {"__panglia_planet__/graphics/entity/plant/processing-grid-process-dna/processing-grid-process-dna.png"},
               width = 128,
               height = 128,
               lines_per_file = 25,
@@ -575,7 +575,7 @@ data:extend({
       layers =
       {
         {
-          filename = "__Moshine__/graphics/empty.png",
+          filename = "__core__/graphics/empty.png",
           width = 1,
           height = 1,
         }
