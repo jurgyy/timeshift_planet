@@ -538,7 +538,7 @@ data:extend({
     autoplace =
     {
       probability_expression = 0,
-      tile_restriction = {"processing-tile"},
+      tile_restriction = {"webbed_processor_tile"},
     },
     tile_buildability_rules = {
       {

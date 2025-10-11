@@ -1,8 +1,14 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.1
 Date: 2025-10-
+  Bugfixes:
+    - Fixed some recipes being available from the start (thanks Qazerowl)
+  UI:
+    - Merged some icons together
   Graphics:
     - DNA computer process has its own color (green)
+  Compatibility:
+    - Adapted to Moshine 1.1 changes
 ---------------------------------------------------------------------------------------------------
 Version: 0.5.0
 Date: 2025-10-06

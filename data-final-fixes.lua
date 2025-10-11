@@ -1,6 +1,6 @@
-if data.raw["lab"]["supercomputer"] then
-  table.insert(data.raw["lab"]["supercomputer"].inputs, "datacell-dna-raw")
-  table.insert(data.raw["lab"]["supercomputer"].inputs, "datacell-dna-sequenced")
+if data.raw["lab"]["neural_computer"] then
+  table.insert(data.raw["lab"]["neural_computer"].inputs, "datacell-dna-raw")
+  table.insert(data.raw["lab"]["neural_computer"].inputs, "datacell-dna-sequenced")
 end
 
 local icons = "__panglia_planet__/graphics/icons/"
@@ -238,7 +238,7 @@ if data.raw["recipe"]["matter_printer-recycling"] and data.raw["recipe"]["matter
     {
       amount = 0.25,
       extra_count_fraction = 0.25,
-      name = "supercomputer",
+      name = "neural_computer",
       type = "item"
     },
     {

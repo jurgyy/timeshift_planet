@@ -139,7 +139,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "panglia_panglite_multiplication",
+    name = "panglia_panglite",
     --icon = icons .. "panglia_panglite_multiplication.png",
     --subgroup = "panglia-processes",
     --order = "a[base]-cc",
@@ -357,7 +357,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "panglia_dust_dummy_recipe",
+    name = "panglia_dust",
     --icon = icons .. "panglia_dust.png",
     category = "panglia_crushing",
     subgroup = "panglia-processes",
@@ -397,7 +397,7 @@ data:extend({
     subgroup = "panglia-processes",
     order = "b[otherres]-aa",
     category = "oil-processing",
-    enabled = true,
+    enabled = false,
     energy_required = 0.5 * beacon_multiplier,
     ingredients = {
       {type = "fluid", name = "panglia_branbalite_slurry", amount = 65},
@@ -427,7 +427,7 @@ data:extend({
     subgroup = "panglia-processes",
     order = "b[otherres]-ab",
     auto_recycle = false,
-    enabled = true,
+    enabled = false,
     allow_productivity = true,
     energy_required = 0.5 * beacon_multiplier,
     ingredients =
@@ -457,7 +457,7 @@ data:extend({
     subgroup = "panglia-processes",
     order = "b[otherres]-ac",
     auto_recycle = false,
-    enabled = true,
+    enabled = false,
     allow_productivity = true,
     energy_required = 0.5 * beacon_multiplier,
     ingredients =
@@ -573,7 +573,7 @@ data:extend({
       quaternary = {245, 105, 66},
     },
     allow_productivity = true,
-    enabled = true,
+    enabled = false,
     surface_conditions = panglia_only,
   },
   {
@@ -601,7 +601,7 @@ data:extend({
       quaternary = {82, 199, 238},
     },
     allow_productivity = true,
-    enabled = true,
+    enabled = false,
     surface_conditions = panglia_only,
   },
 
@@ -613,7 +613,7 @@ data:extend({
     category = "cosmic_incubator",
     subgroup = "matter_printer_recipes",
     order = "aaa",
-    enabled = true,
+    enabled = false,
     energy_required = 40,
     ingredients = {
       {type = "item", name = "panglia_universe_precursor_volcanic", amount = 1}
@@ -648,7 +648,7 @@ data:extend({
     category = "cosmic_incubator",
     subgroup = "matter_printer_recipes",
     order = "aaa",
-    enabled = true,
+    enabled = false,
     energy_required = 60,
     ingredients = {
       {type = "item", name = "universe_precursor", amount = 1}
@@ -708,13 +708,13 @@ data:extend({
     category = "cloning",
     energy_required = 1 * beacon_multiplier,
     ingredients = {
-      {type = "item", name = "hard-drive", amount = 1},
+      {type = "item", name = "datacell-empty", amount = 1},
       --TODO add DNA source
     },
     results = 
     {
       {type = "item", name = "datacell-dna-raw", amount = 1, probability = 0.01},
-      {type = "item", name = "hard-drive", amount = 1, probability = 0.99},
+      {type = "item", name = "datacell-empty", amount = 1, probability = 0.99},
     },
     main_product = "datacell-dna-raw",
     allow_productivity = true,
@@ -826,14 +826,14 @@ data:extend({
 data:extend({
   {
     type = "recipe",
-    name = "panglia_cloned_specimen_body_0_recipe",
+    name = "panglia_cloned_specimen_body_0",
     icon = icons .. "panglia_cloned_specimen_body_0_recipe.png",
     subgroup = "panglia-processes",
     order = "c[cloning]-ee",
     category = "cloning",
     energy_required = 30 * beacon_multiplier,
     ingredients = {
-      --{type = "item", name = "hard-drive", amount = 1},
+      --{type = "item", name = "datacell-empty", amount = 1},
       {type = "item", name = "uranium-235", amount = 1},
       {type = "item", name = "bioflux", amount = 1},
       {type = "item", name = "datacell-dna-sequenced", amount = 1}
@@ -841,7 +841,7 @@ data:extend({
     },
     results = {
       {type = "item", name = "datacell-dna-raw", amount = 1, probability = 1},
-      --{type = "item", name = "hard-drive", amount = 1, probability = 0.99}
+      --{type = "item", name = "datacell-empty", amount = 1, probability = 0.99}
       {type = "item", name = "uranium-238", amount = 1, probability = 1, show_details_in_recipe_tooltip = false},
       {type = "item", name = "panglia_cloned_specimen_body_0", amount = 1, probability = 0.05},
       {type = "item", name = "mutated_monster_egg", amount = 1, probability = 0.95},
@@ -880,7 +880,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "panglia_cloned_specimen_body_1_recipe",
+    name = "panglia_cloned_specimen_body_1",
     icon = icons .. "panglia_cloned_specimen_body_1_recipe.png",
     subgroup = "panglia-processes",
     order = "c[cloning]-gg",
@@ -928,7 +928,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "panglia_cloned_specimen_body_2_recipe",
+    name = "panglia_cloned_specimen_body_2",
     icon = icons .. "panglia_cloned_specimen_body_2_recipe.png",
     category = "simulation_chamber",
     subgroup = "panglia-processes",
@@ -977,7 +977,7 @@ data:extend({
 
   {
     type = "recipe",
-    name = "panglia_cloned_specimen_body_3_recipe",
+    name = "panglia_cloned_specimen_body_3",
     icon = icons .. "panglia_cloned_specimen_body_3_recipe.png",
     category = "simulation_chamber",
     subgroup = "panglia-processes",
@@ -989,8 +989,9 @@ data:extend({
     results = 
     {
       {type = "item", name = "panglia_cloned_specimen_body_3_genius", amount = 1, probability = 0.1, show_details_in_recipe_tooltip = false},
-      {type = "item", name = "panglia_cloned_specimen_body_3_dumb", amount = 1, probability = 0.9},
+      {type = "item", name = "panglia_cloned_specimen_body_3", amount = 1, probability = 0.9},
     },
+    main_product = "panglia_cloned_specimen_body_3",
     allow_productivity = true,
     enabled = false,
     crafting_machine_tint = {
@@ -1025,7 +1026,7 @@ data:extend({
   },
   {
     type = "item",
-    name = "panglia_cloned_specimen_body_3_dumb",
+    name = "panglia_cloned_specimen_body_3",
     icon = icons .. "panglia_cloned_specimen_body_3_dumb.png",
     subgroup = "panglia-processes",
     order = "c[cloning]-mm",
@@ -1066,7 +1067,7 @@ data:extend({
     ingredients =
     {
       {type = "item", name = "quantum-processor", amount = 1},
-      {type = "item", name = "panglia_cloned_specimen_body_3_dumb", amount = 1},
+      {type = "item", name = "panglia_cloned_specimen_body_3", amount = 1},
       {type = "item", name = "processing-unit", amount = 1},
       {type = "item", name = "panglia_panglite", amount = 5},
     },

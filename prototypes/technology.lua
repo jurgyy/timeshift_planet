@@ -61,7 +61,7 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "panglia_panglite_multiplication"
+        recipe = "panglia_panglite"
       },
     },
     prerequisites = {"panglia_planet_discovery_panglia"},
@@ -206,7 +206,7 @@ data:extend({
       --  recipe = "datacell-dna-raw"
       --},
     },
-    prerequisites = {"panglia_planet_discovery_panglia", "moshine-tech-hard-drive"},
+    prerequisites = {"panglia_planet_discovery_panglia", "moshine-tech-data-processor-building"},
     research_trigger =
     {
       type = "craft-item",
@@ -277,7 +277,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "panglia_dust_dummy_recipe",
+        recipe = "panglia_dust",
       }
     },
     prerequisites = {"matter_printer-technology", "panglia_branbalite_slurry", "panglia_advanced_circuit_from_panglite_fiber"},
@@ -364,7 +364,7 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "panglia_cloned_specimen_body_0_recipe"
+        recipe = "panglia_cloned_specimen_body_0"
       },
     },
     prerequisites = {"cloning-vat-technology", "moshine-tech-processing-grid", "uranium-processing"},
@@ -394,7 +394,7 @@ data:extend({
       },
       {
         type = "unlock-recipe",
-        recipe = "panglia_cloned_specimen_body_1_recipe"
+        recipe = "panglia_cloned_specimen_body_1"
       },
     },
     prerequisites = {"moshine-tech-ai-tier-10", "panglia_dna_manipulation", "matter_printer-technology"},
@@ -422,11 +422,11 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "panglia_cloned_specimen_body_2_recipe"
+        recipe = "panglia_cloned_specimen_body_2"
       },
       {
         type = "unlock-recipe",
-        recipe = "panglia_cloned_specimen_body_3_recipe"
+        recipe = "panglia_cloned_specimen_body_3"
       },
     },
     prerequisites = {"panglia_simulation_chamber"},
