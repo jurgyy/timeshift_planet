@@ -1,6 +1,22 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.5.4
+Date: 2025-10-23
+  Changes:
+    - Improved menu-simulations
+    - Fixed robot efficiency not being exactly 1
+---------------------------------------------------------------------------------------------------
+Version: 0.5.3
+Date: 2025-10-11
+  Bugfixes:
+    - Fixed not being able to use the universe incubator on the planet
+---------------------------------------------------------------------------------------------------
+Version: 0.5.2
+Date: 2025-10-11
+  Bugfixes:
+    - Fixed mod not loading because it requires a higher version the asset mod
+---------------------------------------------------------------------------------------------------
 Version: 0.5.1
-Date: 2025-10-
+Date: 2025-10-11
   Bugfixes:
     - Fixed some recipes being available from the start (thanks Qazerowl)
   UI:

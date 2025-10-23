@@ -5,7 +5,7 @@ local menu_sims = data.raw["utility-constants"]["default"].main_menu_simulations
 -- Remove Vanilla + Expansion menu simulations
 -- Base
 
---[[
+---[[
 menu_sims.nauvis_solar_power_construction = nil
 menu_sims.nauvis_lab = nil
 menu_sims.nauvis_burner_city = nil
@@ -57,7 +57,7 @@ menu_sims.fulgora_race = nil
 menu_sims.aquilo_send_help = nil
 menu_sims.aquilo_starter = nil
 menu_sims.nauvis_rocket_factory = nil
-]]
+--]]
 
 menu_sims.panglia_panderoots_sim = {
   checkboard = false,
@@ -69,7 +69,7 @@ menu_sims.panglia_panderoots_sim = {
   init = [[
     game.simulation.camera_zoom = 1
     game.simulation.camera_player = "snouz"
-    game.simulation.camera_position = {327,30}
+    game.simulation.camera_position = {327.5,27.75}
     game.simulation.camera_alt_info = false
     game.simulation.hide_cursor = true
     game.tick_paused = false
@@ -86,7 +86,7 @@ menu_sims.panglia_branbalite_sim = {
   init = [[
     game.simulation.camera_zoom = 1
     game.simulation.camera_player = "snouz"
-    game.simulation.camera_position = {-40,13}
+    game.simulation.camera_position = {-41.5,12.75}
     game.simulation.camera_alt_info = false
     game.simulation.hide_cursor = true
     game.tick_paused = false
@@ -103,7 +103,7 @@ menu_sims.panglia_universe_sim = {
   init = [[
     game.simulation.camera_zoom = 1
     game.simulation.camera_player = "snouz"
-    game.simulation.camera_position = {-85,63}
+    game.simulation.camera_position = {-87.5,59.75}
     game.simulation.camera_alt_info = false
     game.simulation.hide_cursor = true
     game.tick_paused = false
@@ -120,7 +120,7 @@ menu_sims.panglia_simchambers_sim = {
   init = [[
     game.simulation.camera_zoom = 1
     game.simulation.camera_player = "snouz"
-    game.simulation.camera_position = {775,937}
+    game.simulation.camera_position = {774.5,940.75}
     game.simulation.camera_alt_info = false
     game.simulation.hide_cursor = true
     game.tick_paused = false

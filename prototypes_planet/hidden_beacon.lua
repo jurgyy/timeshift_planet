@@ -148,7 +148,7 @@ data:extend({
     localised_description = {"item-description.speed-module"},
     icon = icons .. "panglia_hidden_beacon_module.png",
     hidden = true,
-    hidden_in_factoriopedia = true,
+    --hidden_in_factoriopedia = true,
     --subgroup = "module",
     --order = "a[speed]-b[speed-module-2]",
     category = "panglia_module",
